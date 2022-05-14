@@ -1,0 +1,80 @@
+.search i {
+    top: 7px;
+    right: 10px;
+    font-size: 1.6rem;
+}
+
+.search i:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart::after {
+    content: "0";
+    position: absolute;
+    top: 0;
+    right: -4px;
+    font-size: 1rem;
+    padding: 0 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 0.9rem;
+}
+
+.user {
+    margin-left: 96px;
+}
+
+.user i {
+    font-size: 1.8rem;
+}
+
+.user:before {
+    content: "";
+    width: 300%;
+    height: 10px;
+    top: 88%;
+    right: 0;
+    position: absolute;
+}
+
+.user-control {
+    right: 0;
+    top: 36px;
+    min-width: 160px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: none !important;
+}
+
+.user-control ul {
+        margin: 0;
+}
+
+.user:hover .user-control{
+    display: flex !important;
+}
+
+.user-control a {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.user-control a:hover {
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cart:hover, .user:hover {
+    cursor: pointer;
+}

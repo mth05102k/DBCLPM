@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 13, 2021, 12:13:41 PM
+    Author     : Admin
+*/
+
+body:not(.modal-open){
+  padding-right: 0px !important;
+}
+
+.modal {
+    padding-right: 0px !important;
+}
+
+.show-password-control {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.show-password-control:hover {
+    cursor: pointer;
+}
+
+.forgot-password-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.register-policy {
+    font-size: 0.9rem;
+    padding: 0 30px;
+    text-justify: inter-word;
+    text-align: center;
+}
+
+.register-policy a{
+    text-decoration: none;
+}

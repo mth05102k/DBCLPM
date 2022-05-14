@@ -1,0 +1,74 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 3, 2022, 1:23:06 PM
+    Author     : Admin
+*/
+
+
+.book-status-control {
+    width: 65px;
+    background-color: var(--primary-color);
+    padding: 2px 8px;
+    position: relative;
+}
+
+.book-status-control:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.book-status-control .status-control-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all linear 0.3s;
+}
+
+.book-status-control.down {
+    background-color: var(--secondary-color);
+}
+
+.book-status-control.down .status-control-btn {
+    left: 34px;
+}
+
+.status-control-btn i {
+    width: 24px;
+    height: 24px;
+    transition: all linear 0.3s;
+    transform-origin: center;
+}
+
+.book-status-control.down .status-control-btn i {
+    color: var(--text-color);
+    transform: rotate(180deg);
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.author-item:last-child {
+    color: var(--primary-color);
+    border: 3px dashed var(--primary-color);
+}
+
+.author-item a {
+    padding: 10px 0;
+}
+
+.author-item:hover {
+    cursor: pointer;
+}
+
+.author-control {
+    min-width: 80px;
+}

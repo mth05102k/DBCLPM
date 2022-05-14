@@ -1,0 +1,134 @@
+:root {
+/*    --primary-color: #ee4d2d;
+    --white-color: #fff;
+    --black-color: #000;
+    --gold-color: #ffce3e;
+    --text-color: #333;
+    --border-color: #bdbdbd;
+    --header-height: 120px;
+    --navbar-height: 36px;
+    --header-search-bar-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;*/
+}
+
+.bt {
+    min-width: 124px;
+    height: 34px;
+    border: none;
+    border-radius: 3px;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.bt.bt--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bt.bt--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.bt.bt--disabled {
+    color: #949494;
+    background-color: #c3c3c3;
+    cursor: default;
+}
+
+/* selection */
+
+.select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.select-input__label {
+    font-size: 1rem;
+}
+
+.select-input__icon {
+    font-size: 1rem;
+    color: rgb(126, 126, 126);
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 1px);
+    margin: 0;
+    padding: 10px 16px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+
+.select-input__link {
+    font-size: 1rem;
+    color: var(--text-color);
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    ;
+}
+
+.pagination-item {
+    margin: 0 8px;
+}
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-align: center;
+    line-height: var(--height);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    border-radius: 2px;
+}

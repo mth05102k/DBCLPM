@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2021, 9:49:55 AM
+    Author     : Admin
+*/
+
+.home-product__item {
+    display: block;
+    margin-top: 10px;
+    background-color: var(--white-color);
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+    text-decoration: none;
+}
+
+.home-product__item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home-product__item-img {
+    /* 100% parent width */
+    padding-top: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.home-product__item-name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.4rem;
+    margin: 8px;
+    height: 2.8rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product__item-price {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.home-product__item-price--old {
+    margin-left: 8px;
+    font-size: 0.8125rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.home-product__item-price--current {
+    margin-left: 8px;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.home-product__item--sold {
+    font-size: 0.8125rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
+.home-product__item-origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 8px 0;
+    color: #595959;
+    font-size: 0.8125rem;
+    padding-bottom: 12px;
+}
+
+.home-product__item-brand {
+}
+
+.home-product__item-country {
+}
+
+.home-product__item-favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 5px;
+    border-radius: 0 3px 3px 0;
+}
+
+.home-product__item-favourite::after {
+    content: "";
+    border-top: 4px solid currentColor;
+    border-left: 4px solid transparent;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    filter: brightness(60%);
+}
+
+.home-product__item-favourite span {
+    color: var(--white-color);
+}
+
+.home-product__item-favourite i {
+    color: var(--white-color);
+    font-size: 0.8125rem;
+    margin: 0 2px 0 5px;
+}
+
+.home-product__item-saleoff {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 42px;
+    text-align: center;
+    border-top-right-radius: 2px;
+    background-color: rgba(255, 216, 64, 0.9);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}
+
+.saleoff__precent {
+    color: var(--primary-color);
+    font-size: .8125rem;
+}
+
+.saleoff__label {
+    color: var(--white-color);
+    font-size: .8125rem;
+}

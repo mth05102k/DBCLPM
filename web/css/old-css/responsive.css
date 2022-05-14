@@ -1,0 +1,49 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+  .mobile-category {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .header__mobile-search {
+    display: block;
+  }
+
+  @keyframes mobileSearchSlideDown {
+    from {
+      overflow: hidden;
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      overflow: visible;
+      opacity: 1;
+      height: 46px;
+    }
+  }
+
+  .pagination-item__link {
+    font-size: 1.6rem;
+    min-width: 36px;
+    --height: 28px;
+  }
+
+  .container__content {
+    margin: 0 4px;
+  }
+
+}

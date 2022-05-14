@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 2, 2022, 10:28:08 AM
+    Author     : Admin
+*/
+
+.book-information__table .table tbody tr {
+    transition: box-shadow ease-in 0.1s, position linear 1s;
+}
+
+.book-information__table .table tbody tr:hover {
+    cursor: pointer;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.08);
+}
+
+.book-information__table .table tr td:last-child {
+    width: 110px;
+}
+
+.row-control:hover {
+    color: var(--text-color);
+}
+
+.unclickable:hover {
+    cursor: default;
+}
+
+.row-control:hover {
+    cursor: pointer;
+}
+
+.gutter {
+    width: 16px;
+}

@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 15, 2021, 11:49:17 AM
+    Author     : Admin
+*/
+
+.table th {
+   text-transform:capitalize;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table .item-general-info {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.table .item-general-info .item-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 8px;
+}
+
+.table .delete-item-btn:hover {
+    cursor: pointer;
+}
+
+.table .delete-item-btn {
+    padding: 6px;
+}
+
+.total-bill {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+.total-bill__cost {
+    color: var(--primary-color);
+}
+
+#pay-now {
+    margin-left: auto;
+    width: 210px;
+    padding: 7px 0;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}

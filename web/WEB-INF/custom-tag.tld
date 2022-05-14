@@ -1,0 +1,39 @@
+<taglib>
+   <tlib-version>1.0</tlib-version>
+   <jsp-version>2.0</jsp-version>
+   <short-name>Example TLD</short-name>
+   
+   <tag>
+      <name>currencyFormat</name>
+      <tag-class>utils.CustomCurrencyFormatterTag</tag-class>
+      <body-content>empty</body-content>
+
+      <attribute>
+         <name>amount</name>
+        <required>true</required>
+        <rtexprvalue>true</rtexprvalue>
+      </attribute>
+
+      <attribute>
+         <name>currencyFormat</name>
+        <type>java.lang.String</type>
+        <required>false</required>
+      </attribute>
+   </tag>
+   
+   <tag>
+      <name>calcDiscountedPrice</name>
+      <tag-class>utils.CalculateDiscountPriceTag</tag-class>
+      <body-content>empty</body-content>
+
+      <attribute>
+         <name>basePrice</name>
+        <required>true</required>
+      </attribute>
+
+      <attribute>
+         <name>discount</name>
+        <required>true</required>
+      </attribute>
+   </tag>
+</taglib>

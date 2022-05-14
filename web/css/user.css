@@ -1,0 +1,116 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 16, 2021, 1:06:21 PM
+    Author     : Admin
+*/
+
+.user__general-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.user__avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.user__edit-profile-ctrl i {
+    font-size: 0.8125rem;
+}
+
+.user__nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--text-color);
+    line-height: 1;
+}
+
+.nav-list .nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-list .nav-item.active a {
+    color: var(--primary-color);
+}
+
+.nav-list .nav-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav-list .nav-item i {
+    font-size: 1.2rem;
+}
+
+.user-profile__info-list-left {
+    padding-right: 5%;
+    border-right: 0.0625rem solid #e4e4e4;
+}
+
+.user-profile__info-item {
+    margin-bottom: 30px;
+}
+
+.user-profile__info-label {
+    text-align: right;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+#phonenumber, #email {
+    background-color: transparent;
+}
+
+.input-edit-control {
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    min-width: 74px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input-edit-control:hover {
+    cursor: pointer;
+}
+
+.form-check-label {
+    color: #000;
+}
+
+.form-check-input {
+    margin-right: 2px;
+}
+
+.user-profile__avatar-control img {
+    max-width: 100px;
+}
+
+#user-avatar-preview {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+#avatar-chooser-input {
+    display: none;
+}
+
+.avatar-choose-constraints {
+    font-size: 0.8125rem;
+}
+
+.input-edit-control {
+    user-select: none;
+}

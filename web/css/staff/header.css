@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 3, 2022, 10:28:17 AM
+    Author     : Admin
+*/
+
+.theme-control {
+    padding: 9px 13px;
+    color: #fff;
+    background-color: var(--light-blue-color);
+}
+
+.theme-control:hover {
+    cursor: pointer;
+}
+
+.theme-control.active, .theme-control:hover {
+    opacity: 0.8;
+}
+
+.menu-item {
+    margin: 0 8px;
+    padding: 2px 4px;
+}
+
+.header-item:hover {
+    cursor: pointer;
+    color: var(--text-color) !important;
+}
+
+.user__avatar:hover {
+    cursor: pointer;
+}
+
+.user__avatar img {
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+.user:hover .user-control  {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.user-control {
+    width: 150%;
+    right: 0;
+    padding: 16px 12px;
+}
+
+.user-control a {
+    display: block;
+    padding: 4px 0;
+}

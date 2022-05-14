@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2021, 8:16:04 AM
+    Author     : Admin
+*/
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateX(50%) translateY(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 12%);
+    opacity: 1;
+}
+
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%6c757d'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+} 
+
+.carousel-control-next:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-next:hover .carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+}

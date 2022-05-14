@@ -1,0 +1,44 @@
+.form-check-label:hover {
+    cursor: pointer;
+}
+
+.fs-7 {
+    font-size: 0.875rem;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.min-w-150 {
+    min-width: 150px;
+}
+
+.custom-form-select {
+    border: none;
+    outline: none;
+    color: var(--light-blue-color);
+}
+
+.custom-form-select:hover {
+    cursor: pointer;
+}
+
+.control__left, .control__right {
+    padding: 2px 8px;
+}
+
+.control__left:hover, .control__right:hover {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 4px;
+}
+
+.main-content {
+    overflow-y: scroll;
+}
